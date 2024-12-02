@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulators ar Vēsturi</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="pievienotUzEkranu('7')">7</button>
+            <button onclick="pievienotUzEkranu('8')">8</button>
+            <button onclick="pievienotUzEkranu('9')">9</button>
+            <button onclick="pievienotUzEkranu('/')">/</button>
+            <button onclick="pievienotUzEkranu('4')">4</button>
+            <button onclick="pievienotUzEkranu('5')">5</button>
+            <button onclick="pievienotUzEkranu('6')">6</button>
+            <button onclick="pievienotUzEkranu('*')">*</button>
+            <button onclick="pievienotUzEkranu('1')">1</button>
+            <button onclick="pievienotUzEkranu('2')">2</button>
+            <button onclick="pievienotUzEkranu('3')">3</button>
+            <button onclick="pievienotUzEkranu('-')">-</button>
+            <button onclick="pievienotUzEkranu('0')">0</button>
+            <button onclick="notirit()">AC</button>
+            <button id="equals" onclick="aprekins()">=</button>
+            <button onclick="pievienotUzEkranu('+')">+</button>
+        </div>
+        <div id="history-section">
+            <h3>Vēsture</h3>
+            <div id="history"></div>
+            <button onclick="dzestVesturi()">Izdzēst Vēsturi</button>
+        </div>
+    </div>
+    <script src="Style.js"></script>
+</body>
+</html>
